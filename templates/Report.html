@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <h1>EMISSION MANAGEMENT REPORT</h1>
+    <img src="../static/Logo.jpg" class="logo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+            height: 100vh;
+            background:linear-gradient(to top, #075593 0%, #ffffff 85%);
+            
+        }
+
+        .dashboard-container {
+            width: 90%;
+            max-width: 1200px;
+        }
+        .logo {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 60px;
+            width: 180px;
+        }
+        .dashboard {
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            gap: 20px;
+            padding-bottom: 30px;
+        }
+
+        .dashboard-item {
+            text-align: center;
+            background-color: #ffffff;
+            border: 1px solid #396afe;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .dropdown {
+            width: 70%;
+            padding: 8px;
+            margin-top: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            border-color: #075593;
+        }
+    h4{
+        padding-left: 50px;
+        border-style: solid;
+        border-color: black;
+        border-top: fit-content;
+        border-left-width: 10px;
+        border-spacing: 20px;
+        border-inline-end-width: 10px;
+    }
+    table{
+            font-family: Arial, sans-serif;
+            
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #000000;
+    }
+    th, td{
+        border: 1px solid #000000;
+        text-align: left;
+        padding: 12px;
+        font-size: 20px;
+    }
+    th{
+        font-weight: bold;
+    }
+    h1{
+
+            top: 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div style="display: flex;flex-direction: row;">
+    <div style="align-content: left;margin-left: 100px;margin-top: 60px;padding-right: 30px;"><img style="border:2px solid black;" src="{{url}}" height="600px" width="1400px"></div>
+    </div>
+</body>
+</html>
